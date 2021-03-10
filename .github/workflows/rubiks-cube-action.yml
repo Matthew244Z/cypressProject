@@ -11,3 +11,4 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           start: npm start
+          start-windows: npm run start:windows::server
