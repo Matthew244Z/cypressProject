@@ -5,8 +5,6 @@ jobs:
     runs-on: windows-latest
     steps:
         - uses: actions/checkout@v2
+        - run: npm start
         - uses: cypress-io/github-action@v2
-#           with:
-#             browser: chrome
-#           start: npm start
-#           start-windows: npm run start:windows::server
+
