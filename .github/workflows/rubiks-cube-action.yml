@@ -5,10 +5,12 @@ jobs:
     name: Cypress run
     runs-on: windowns-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Cypress run
-        uses: cypress-io/github-action@v2
-        with:
-          start: npm start
-          start-windows: npm run start:windows::server
+        - uses: actions/checkout@v2
+        - uses: cypress-io/github-action@v2
+        - run: npm install express ejs
+        - run: npm install nodemon ==save-dev
+        - run: npm init
+        - run: npx cypress open
+#         with:
+#           start: npm start
+#           start-windows: npm run start:windows::server
