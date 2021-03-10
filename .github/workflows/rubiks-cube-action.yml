@@ -2,15 +2,12 @@ name: rubiks-cube-action
 on: [push]
 jobs:
   cypress-run:
-    name: Cypress run
-    runs-on: windowns-latest
+    runs-on: ubuntu-16.04
+    name: E2E on Chrome
     steps:
         - uses: actions/checkout@v2
         - uses: cypress-io/github-action@v2
-        - run: npm install express ejs
-        - run: npm install nodemon ==save-dev
-        - run: npm init
-        - run: npx cypress open
-#         with:
+          with:
+            browser: chrome
 #           start: npm start
 #           start-windows: npm run start:windows::server
