@@ -1144,7 +1144,7 @@ export const printFormulaSteps = function()
 
         if(step.formula == "")
         {
-            step.formula.push("This step is alredy done!");
+            step.formula.push("This step is already done!");
         }
 
         step.print();

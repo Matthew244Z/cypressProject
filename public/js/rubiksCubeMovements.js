@@ -532,7 +532,8 @@ export const scramble = function(array, arrayCenter, arrayScramble, arrayCopy, a
 
     }
 
-    return true;
+    if(arrayScramble.length !== 0)
+        return true;
 
 }
 
