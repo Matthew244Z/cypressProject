@@ -6,4 +6,7 @@ jobs:
     steps:
         - uses: actions/checkout@v2
         - uses: cypress-io/github-action@v2
+          with:
+            browser: electron
+            wait-on: https://localhost:3000
 
