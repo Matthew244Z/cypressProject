@@ -6,7 +6,7 @@ jobs:
     steps:
         - uses: actions/checkout@v2
         - run: npm install nodemon --save-dev
-        - run: npm start
+#         - run: npm start
         - uses: cypress-io/github-action@v2
           with:
             browser: electron
